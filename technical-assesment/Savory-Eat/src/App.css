@@ -1,0 +1,517 @@
+.App {
+  text-align: center;
+}
+.update{
+  
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 500px;
+  transition-property: background-color,border-color,color,box-shadow,filter;
+  transition-duration: .3s;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  min-width: 160px;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 700;
+  text-align: center;
+  padding: 16px 14px 18px;
+  color: #616467;
+  box-shadow: inset 0 0 0 2px #616467;
+  background-color: transparent;
+  height: 48px;
+  :hover{
+      color: #fff;
+      background-color: #616467;
+  }
+
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.nav {
+  display: inline-flex;
+  position: relative;
+  background-color: black;
+  padding: 0;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 3.2px 7.2px 0 rgb(0 0 0 / 13%), 0 0.6px 1.8px 0 rgb(0 0 0 / 11%);
+  height: 100px;
+}
+
+.nav-item {
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+  margin: 0 6px;
+  z-index: 1;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  position: relative;
+  font-size: 25px;
+  margin-top: 10px;
+  
+  left: 35%;
+  cursor: pointer;
+}
+
+.nav-item:not(.is-active):hover:before {
+  opacity: 1;
+  bottom: 0;
+}
+
+.nav-item:not(.is-active):hover {
+  color: #333;
+}
+
+.nav-indicator {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  transition: 0.4s;
+  height: 5px;
+  z-index: 1;
+  border-radius: 8px 8px 0 0;
+}
+
+@media (max-width: 580px) {
+  .nav {
+    overflow: auto;
+  }
+}
+
+/* search */
+.search-div {
+  margin-left: 67%;
+  margin-top: 14px;
+}
+
+.search-input {
+  border-radius: 30px;
+  width: 220px;
+  height: 50px;
+  border: none;
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px;
+  padding-left: 15px;
+  background-color: rgb(232, 237, 241);
+}
+
+.search-button {
+  position: absolute;
+  left: 15px;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  margin-left: 94%;
+  margin-top: 7px;
+  border: none;
+  background: none;
+  outline: none !important;
+  cursor: pointer;
+}
+
+.latest_trand_area {
+  background-image: url(../public/assets/banner/example.png);
+  
+  padding: 150px 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 767px) {
+  /* line 330, ../../Arafath/CL/CL October/220 Tasty recepies/HTML/scss/_recepie.scss */
+  .latest_trand_area {
+    padding: 100px 0;
+  }
+}
+
+/* line 340, ../../Arafath/CL/CL October/220 Tasty recepies/HTML/scss/_recepie.scss */
+.latest_trand_area .trand_info p {
+  font-size: 12px;
+  color: #777777;
+  text-transform: uppercase;
+}
+
+/* line 345, ../../Arafath/CL/CL October/220 Tasty recepies/HTML/scss/_recepie.scss */
+.latest_trand_area .trand_info h3 {
+  color: #000000;
+  font-size: 60px;
+  margin-top: 14px;
+  margin-bottom: 75px;
+}
+
+@media (max-width: 767px) {
+  /* line 345, ../../Arafath/CL/CL October/220 Tasty recepies/HTML/scss/_recepie.scss */
+  .latest_trand_area .trand_info h3 {
+    color: #000000;
+    font-size: 40px;
+    margin-top: 14px;
+    margin-bottom: 35px;
+  }
+}
+
+
+/* .boxed-btn3 {
+  display: inline-block;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #FFC000;;
+  border: 1px solid #fff;
+  padding: 12px 36px;
+  font-size: 16px;
+  line-height: 1.5;
+  border-radius: 30px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.boxed-btn3:hover {
+  color: #FFC000;;
+ background: #ff008c;
+  border-color: #1E90FF;
+} */
+
+
+.boxed-btn {
+  background: #fff;
+  color: #131313;
+  display: inline-block;
+  padding: 18px 44px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  border: 0;
+  border: 1px solid #ffc000;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #ffc000 !important;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* line 17, ../../Arafath/CL/CL October/220 Tasty recepies/HTML/scss/_btn.scss */
+.boxed-btn:hover {
+  background: #ffc000;
+  color: #fff !important;
+  border: 1px solid #ffc000;
+}
+
+/* line 22, ../../Arafath/CL/CL October/220 Tasty recepies/HTML/scss/_btn.scss */
+.boxed-btn:focus {
+  outline: none;
+}
+
+/* line 25, ../../Arafath/CL/CL October/220 Tasty recepies/HTML/scss/_btn.scss */
+.boxed-btn.large-width {
+  width: 220px;
+}
+
+/* line 29, ../../Arafath/CL/CL October/220 Tasty recepies/HTML/scss/_btn.scss */
+.boxed-btn3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  padding: 14px 41px;
+  text-align: center;
+  border: none;
+  background-size: 100% 100%;
+  border-radius: 50px;
+  background-size: 101% 100%;
+  background: #FFC000;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  display: inline-block;
+  border: 1px solid transparent;
+  text-decoration: none;
+}
+
+/* line 45, ../../Arafath/CL/CL October/220 Tasty recepies/HTML/scss/_btn.scss */
+.boxed-btn3:hover {
+  color: #FFC000;
+  border: 1px solid #fff;
+  background: #fff;
+}
+
+/* line 51, ../../Arafath/CL/CL October/220 Tasty recepies/HTML/scss/_btn.scss */
+.boxed-btn3:focus {
+  outline: none;
+}
+
+/* line 59, ../../Arafath/CL/CL October/220 Tasty recepies/HTML/scss/_btn.scss */
+.boxed-btn3-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  padding: 14px 38px;
+  text-align: center;
+  border: none;
+  border-radius: 50px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  display: inline-block;
+  color: #ffc000;
+}
+
+/* line 72, ../../Arafath/CL/CL October/220 Tasty recepies/HTML/scss/_btn.scss */
+.boxed-btn3-text:hover {
+  background-position: 100% 0;
+  color: #fff;
+
+}
+
+/* line 77, ../../Arafath/CL/CL October/220 Tasty recepies/HTML/scss/_btn.scss */
+.boxed-btn3-text:focus {
+  outline: none;
+}
+
+
+
+
+
+
+/* line 72, ../../Arafath/CL/CL October/220 Tasty recepies/HTML/scss/_btn.scss */
+.boxed-btn3-text:hover {
+  background-position: 100% 0;
+  color: #fff;
+}
+
+/* line 77, ../../Arafath/CL/CL October/220 Tasty recepies/HTML/scss/_btn.scss */
+.boxed-btn3-text:focus {
+  outline: none;
+}
+
+
+
+
+
+
+
+/* line 137, ../../Arafath/CL/CL October/220 Tasty recepies/HTML/scss/_btn.scss */
+.boxed-btn3-white i {
+  margin-right: 2px;
+}
+
+
+.update{
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 500px;
+  transition-property: background-color,border-color,color,box-shadow,filter;
+  transition-duration: .3s;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  min-width: 160px;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 700;
+  text-align: center;
+  padding: 16px 14px 18px;
+  color: #616467;
+  box-shadow: inset 0 0 0 2px #616467;
+  background-color: transparent;
+  height: 30px;
+  :hover{
+      color: #fff;
+      background-color: #616467;
+}
+}
+.delete{
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 500px;
+  transition-property: background-color,border-color,color,box-shadow,filter;
+  transition-duration: .3s;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  min-width: 160px;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 700;
+  text-align: center;
+  justify-content:center;
+  padding: 16px 14px 18px;
+  color: red;
+  box-shadow: inset 0 0 0 2px red;
+  background-color: transparent;
+  height: 30px;
+  :hover{
+      color: #fff;
+      background-color: red;
+}
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+@media only screen and (max-width: 600px) {
+  form {
+    width: 80%;
+  }
+}
+.add-recipe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.add-recipe-form input {
+  margin: 5px;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.add-recipe-form button {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #0069d9;
+  color: #fff;
+  cursor: pointer;
+}
+
+.add-recipe-form button:hover {
+  background-color: #005cbf;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.nav-item input {
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.nav-item button {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+
+.img{
+  width:500px;
+  height:500px
+}

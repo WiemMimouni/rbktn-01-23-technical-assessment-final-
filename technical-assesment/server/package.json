@@ -1,0 +1,19 @@
+{
+  "name": "problem-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server-dev": "nodemon server/index.js"
+  },
+  "author": "undefined",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.5",
+    "express": "^4.15.4",
+    "mysql2": "^3.2.4",
+    "nodemon": "^2.0.20"
+  }
+}
